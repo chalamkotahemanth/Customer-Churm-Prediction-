@@ -26,5 +26,5 @@ if uploaded_file:
     df["Churn Prediction"] = prediction
 
     st.success("✅ Prediction Complete!")
-    st.write(df[["name","gender", "Contract", "MonthlyCharges", "Churn Prediction"]])
+    st.write("Available columns:", df.columns.tolist())
 
